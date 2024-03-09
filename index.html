@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe: The Game</title>
+
+    <link rel="shortcut icon" href="the mask favicon.jpg" type="image/x-icon">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        text-align: center;
+        background: linear-gradient(rgba(4, 4, 30, 0.253), rgba(18, 52, 102, 0.438)), url(pexels-soner-arkan-17319418.jpg) no-repeat fixed;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 40px;
+        text-shadow: 0 0 2rem rgb(243, 240, 223);
+        font-weight: 900;
+        font-size: 2.4em;
+        text-decoration: underline;
+    }
+
+    .container {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .game {
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        background-color: rgba(212, 200, 200, 0.685);
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        font-size: 4em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #reset-btn {
+        padding: 1rem;
+        margin: 20px;
+        font-size: 1.5rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 2rem rgba(255, 255, 255, 0.381);
+    }
+
+    #new-btn {
+        padding: 1rem;
+        margin: 20px;
+        font-size: 1.25rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 2rem rgba(255, 255, 255, 0.546);
+    }
+
+    #msg {
+        color: #ffffc7;
+        font-size: 5vmin;
+        margin: 40px 0 20px 0;
+    }
+
+    .msg-container {
+        height: 10em;
+
+    }
+
+    .hide {
+        display: none;
+    }
+    footer{
+    color: whitesmoke;
+    font-size: small;
+    }
+</style>
+
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">
+            New Game
+        </button>
+    </div>
+    <main>
+        <h1>
+            Tic-Tac-Toe
+        </h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
+
+    <footer>&copy; All rights reserved @Sagar Malasi</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
